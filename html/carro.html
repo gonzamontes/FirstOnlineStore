@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Tienda Montes</title>
+</head>
+<body>
+    <!-- mi header -->
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="../index.html">Tienda Montes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <form class="form-inline my-2 my-lg-0 ml-lg-5">
+                    <input class="form-control mr-sm-2" type="search" placeholder="buscar">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Pagina Principal<span class="sr-only">(actual)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item mr-3 active">
+                        <a class="nav-link" href="carro.html tabindex="-1" id="carro">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cantidadProducto">0</span> <!-- cantidad del producto -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- seccion de productos -->
+    <div class="container mt-5 mb-5" id="lista-productos">
+        <table class="table d-none text-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="finalizarboton container mt-5 mb-5">
+            
+    </div>
+
+    <!-- archivos js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3f7e3de7b3.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/carro.js"></script>
+</body>
+</html>

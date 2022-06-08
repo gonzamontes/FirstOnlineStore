@@ -1,0 +1,40 @@
+[
+    {
+      "precio": 749.99,
+      "id": "G0NZALO",
+      "titulo": "Gorra Adidas",
+      "img": "/img/1.jpeg",
+      "gama": "Baja" 
+    },
+    {
+      "precio": 813.36,
+      "id": "GONZ4LO",
+      "titulo": "Remera Negra",
+      "img": "/img/2.jpeg",
+      "gama": "Baja"    },
+    {
+      "precio": 899.99,
+      "id": "GON2ALO",
+      "titulo": "Pantalon Nike",
+      "img": "/img/3.jpeg",
+      "gama": "Media-Baja"     },
+    {
+      "precio": 1429.99,
+      "id": "6ONZALO",
+      "titulo": "Buzo Rosa Lacoste",
+      "img": "/img/4.jpeg",
+      "gama": "Media"     },
+    {
+      "precio": 2499.99,
+      "id": "GONZA1O",
+      "titulo": "Campera Inflada",
+      "img": "/img/5.jpeg",
+      "gama": "Media-Alta"     },
+    {
+      "precio": 1125.99,
+      "id": "60N2410",
+      "titulo": "Nike Jordan Air",
+      "img": "/img/6.jpeg",
+      "gama": "Alta"     }
+      
+  ]

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <title>Tienda Montes</title>
+</head>
+<body>
+    <!-- mi header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html" id="logo">
+                Tienda Montes
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <form class="form-inline my-2 my-lg-0 ml-lg-5">
+                    <input class="form-control mr-sm-2" type="search" placeholder="buscar">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Pagina Principal<span class="sr-only">actual</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item mr-3 active">
+                        <a class="nav-link" href="html/carro.html" tabindex="-1" id="carro">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cantidadProducto">0</span> <!-- cantidad del producto -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- seccion de productos -->
+    <main class="mt-5 mb-5 container">
+        <div class="d-flex flex-wrap">
+            <div class="card product mt-5 mb-3" id="product1">
+                <img src="img/1.jpeg" class="card-img-top ml-auto mr-auto" alt="...">
+                <div class="card-body text-center product-info">
+                    <h5 class="card-title">Gorra Adidas</h5>
+                    <p>$<strong><span>749.99</span></strong></p>
+                    <a href="#" class="btn btn-primary btn-block añadir">Añadir al carrito</a>
+                </div>
+            </div>
+            <div class="card product mt-5 mb-3" id="product2">
+                <img src="img/2.png" class="card-img-top ml-auto mr-auto" alt="...">
+                <div class="card-body text-center product-info">
+                    <h5 class="card-title">Remera Negra Estampada</h5>
+                    <p>$<strong><span>813.36</span></strong></p>
+                    <a href="#" class="btn btn-primary btn-block añadir">Añadir al carrito</a>
+                </div>
+            </div>
+            <div class="card product mt-5 mb-3" id="product3">
+                <img src="img/3.jpeg" class="card-img-top ml-auto mr-auto" alt="...">
+                <div class="card-body text-center product-info">
+                    <h5 class="card-title">Pantalon Nike</h5>
+                    <p>$<strong><span>899.00</span></strong></p>
+                    <a href="#" class="btn btn-primary btn-block añadir">Añadir al carrito</a>
+                </div>
+            </div>
+            <div class="card product mt-5 mb-3" id="product4">
+                <img src="img/4.jpeg" class="card-img-top ml-auto mr-auto" alt="...">
+                <div class="card-body text-center product-info">
+                    <h5 class="card-title">Buzo Rosa Lacoste</h5>
+                    <p>$<strong><span>1429.99</span></strong></p>
+                    <a href="#" class="btn btn-primary btn-block añadir">Añadir al carrito</a>
+                </div>
+            </div>
+            <div class="card product mt-5 mb-3" id="product5">
+                <img src="img/5.jpeg" class="card-img-top ml-auto mr-auto" alt="...">
+                <div class="card-body text-center product-info">
+                    <h5 class="card-title">Campera Inflada</h5>
+                    <p>$<strong><span>2499.99</span></strong></p>
+                    <a href="#" class="btn btn-primary btn-block añadir">Añadir al carrito</a>
+                </div>
+            </div>
+            <div class="card product mt-5 mb-3" id="product6">
+                <img src="img/6.jpeg" class="card-img-top ml-auto mr-auto" alt="...">
+                <div class="card-body text-center product-info">
+                    <h5 class="card-title">Nike Jordan Air</h5>
+                    <p>$<strong><span>1125.99</span></strong></p>
+                    <a href="#" class="btn btn-primary btn-block añadir">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- tabla de datos de api -->
+
+        <div class="container mt-4 shadow-lg p4 bg-body rounded bg-light">
+            <h4 class="card-title text-center">TABLA DE PRODUCTOS</h4>
+            <table class="table table-bordered table-striped ">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>PRECIO</th>
+                        <th>GAMA</th>
+                    </tr>
+                </thead>
+
+                <tbody id="datos">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- archivos js -->
+    <script src="https://kit.fontawesome.com/3f7e3de7b3.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <!-- toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
